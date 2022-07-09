@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
   <head>
@@ -12,6 +13,7 @@
     />
     <link rel="stylesheet" href="src/style.css" />
   </head>
+
   <body>
     <section class="hero is-primary is-bold">
       <div class="hero-body">
@@ -25,13 +27,26 @@
         </div>
       </div>
     </section>
-
-
     <div class="container">
-<div class="autocomplete"></div>
-<div id="summary"></div>
+      <div class="columns">
+        <div class="column">
+          <div id="left-autocomplete"></div>
+          <div id="left-summary"></div>
+        </div>
+
+        <div class="column">
+          <div id="right-autocomplete"></div>
+          <div id="right-summary"></div>
+        </div>
+
+      </div>
+      <div class="column is-half notification is-primary tutorial">
+        <h1 class="title"> Search For a Movie on Both Sides</h1>
+        <p class="subtitle">We will tell you which is best!</p>
+      
     </div>
     <script src="src/functions.js"></script>
+    <script src="src/autocomplete.js"></script>
     <script src="src/index.js"></script>
   </body>
 </html>
