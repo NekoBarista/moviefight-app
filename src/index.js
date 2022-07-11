@@ -122,6 +122,8 @@ console.log(awards)
 const metascore = parseInt(movieDetail.Metascore)
 const imdbRating = parseFloat(movieDetail.imdbRating)
 const imdbVotes = parseInt(movieDetail.imdbVotes.replace(/,/g, ' '))
+const imgsrcRender = movieDetail.Poster === 'N/A' ? " " :  movie.Poster
+
 
 
 
@@ -129,7 +131,7 @@ return `
 <article class="media">
 <figure class="media-left">
   <p class="image">
-    <img src="${movieDetail.Poster}" />
+    <img src="${imgsrcRender}" />
   </p>
 </figure>
 <div class="media-content">
