@@ -122,7 +122,7 @@ console.log(awards)
 const metascore = parseInt(movieDetail.Metascore)
 const imdbRating = parseFloat(movieDetail.imdbRating)
 const imdbVotes = parseInt(movieDetail.imdbVotes.replace(/,/g, ' '))
-const imgsrcRender = movieDetail.Poster === 'N/A' ? " " :  movie.Poster
+const imgsrcRender = movieDetail.Poster === 'N/A' ? " " :  movieDetail.Poster
 
 
 
